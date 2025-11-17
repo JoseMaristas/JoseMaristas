@@ -1,0 +1,375 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Cristiano Ronaldo — CR7</title>
+
+  <style>
+
+    :root{
+
+      --bg:#0b1220;
+
+      --card:#0f1724;
+
+      --accent:#e6b800;
+
+      --text:#e6eef8;
+
+      --muted:#9fb0c8;
+
+      --maxw:900px;
+
+    }
+
+    body{
+
+      margin:0;
+
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+      background: linear-gradient(180deg,#031027 0%, #071428 100%);
+
+      color:var(--text);
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      min-height:100vh;
+
+      padding:2rem;
+
+    }
+
+    .card{
+
+      width:100%;
+
+      max-width:var(--maxw);
+
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));
+
+      border-radius:14px;
+
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+
+      overflow:hidden;
+
+      border:1px solid rgba(255,255,255,0.03);
+
+    }
+
+    header{
+
+      padding:1.25rem 1.5rem;
+
+      display:flex;
+
+      align-items:center;
+
+      gap:1rem;
+
+      background:linear-gradient(90deg, rgba(230,184,0,0.09), transparent 60%);
+
+    }
+
+    header h1{
+
+      margin:0;
+
+      font-size:1.35rem;
+
+      letter-spacing:0.6px;
+
+    }
+
+    header p{ margin:0; color:var(--muted); font-size:0.9rem; }
+
+
+
+    .hero{
+
+      display:flex;
+
+      flex-direction:column;
+
+      gap:1rem;
+
+      padding:1.25rem;
+
+      align-items:center;
+
+      text-align:center;
+
+    }
+
+    .hero img{
+
+      width:100%;
+
+      max-width:480px;
+
+      height:auto;
+
+      border-radius:10px;
+
+      border:4px solid rgba(0,0,0,0.25);
+
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05));
+
+    }
+
+    .caption{
+
+      font-size:0.9rem;
+
+      color:var(--muted);
+
+    }
+
+
+
+    main{
+
+      padding:1.25rem 1.5rem 2rem;
+
+      line-height:1.6;
+
+      color:var(--text);
+
+    }
+
+    main h2{
+
+      margin:0 0 0.5rem 0;
+
+      color:var(--accent);
+
+      font-size:1.05rem;
+
+    }
+
+    .info-list{
+
+      display:grid;
+
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+      gap:1rem;
+
+      margin-top:0.75rem;
+
+    }
+
+    .info {
+
+      background:rgba(255,255,255,0.02);
+
+      padding:0.9rem;
+
+      border-radius:8px;
+
+      border:1px solid rgba(255,255,255,0.02);
+
+    }
+
+    .info strong{ display:block; margin-bottom:0.4rem; color:var(--accent); }
+
+    footer{
+
+      padding:1rem 1.5rem;
+
+      border-top:1px solid rgba(255,255,255,0.02);
+
+      font-size:0.85rem;
+
+      color:var(--muted);
+
+      display:flex;
+
+      justify-content:space-between;
+
+      gap:1rem;
+
+      flex-wrap:wrap;
+
+    }
+
+    a.source{ color:var(--muted); text-decoration:none; }
+
+    a.source:hover{ text-decoration:underline; }
+
+    @media (max-width:520px){
+
+      header{ flex-direction:column; align-items:flex-start; gap:0.25rem; }
+
+      .hero img{ max-width:100%; }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <article class="card" aria-labelledby="title">
+
+    <header>
+
+      <div>
+
+        <h1 id="title">Cristiano Ronaldo — CR7</h1>
+
+        <p>Perfil y resumen de su carrera profesional (datos de fuentes fiables).</p>
+
+      </div>
+
+    </header>
+
+
+
+    <section class="hero" role="region" aria-label="Imagen de Cristiano Ronaldo">
+
+      <!-- Si quieres cambiar la imagen, sustituye el valor de src por la URL que prefieras. -->
+
+      <!-- Fuente sugerida: Wikimedia Commons / Wikipedia (usa imágenes con licencia compatible). -->
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+
+           alt="Retrato de Cristiano Ronaldo" />
+
+      <div class="caption">Cristiano Ronaldo (fotografía de archivo). Fuente de datos: Wikipedia, Reuters, The Guardian.</div>
+
+    </section>
+
+
+
+    <main>
+
+      <h2>Resumen real y comprobado de su carrera</h2>
+
+      <p>
+
+        Cristiano Ronaldo dos Santos Aveiro (n. 5 de febrero de 1985 en Funchal, Madeira) es uno de los futbolistas más laureados y con más goles de la historia.
+
+        Comenzó su carrera en las categorías inferiores del Sporting CP y debutó en su primer equipo antes de fichar por el Manchester United (2003), club con el que dio el salto internacional
+
+        y ganó títulos de Liga y la primera de sus tempranas distinciones individuales.
+
+      </p>
+
+
+
+      <div class="info-list" aria-hidden="false">
+
+        <div class="info">
+
+          <strong>Trayectoria por clubes</strong>
+
+          <span>Sporting CP → Manchester United (2003–2009) → Real Madrid (2009–2018) → Juventus (2018–2021) → Manchester United (2021–2022) → Al-Nassr (2023–).</span>
+
+        </div>
+
+
+
+        <div class="info">
+
+          <strong>Récords y números (resumen)</strong>
+
+          <span>Ha sido máximo goleador en competiciones nacionales y europeas, es el máximo goleador histórico de Real Madrid y ha superado hitos goleadores notables a nivel de clubes y selección.</span>
+
+        </div>
+
+
+
+        <div class="info">
+
+          <strong>Palmarés internacional</strong>
+
+          <span>Con la selección de Portugal ganó la Eurocopa 2016 y la UEFA Nations League 2019; ha sido pilar de la selección durante dos décadas.</span>
+
+        </div>
+
+
+
+        <div class="info">
+
+          <strong>Distinciones individuales</strong>
+
+          <span>Ha recibido múltiples Balón de Oro y premios al máximo goleador en distintas ligas (Premier League, LaLiga, Serie A), consolidándose entre los mejores de la historia.</span>
+
+        </div>
+
+      </div>
+
+
+
+      <h2 style="margin-top:1.1rem">Notas recientes (hechos verificados)</h2>
+
+      <ul>
+
+        <li>En la fase tardía de su carrera juega en el Al-Nassr (Arabia Saudí) donde sigue marcando goles importantes. (fuente: Wikipedia / Reuters).</li>
+
+        <li>Ha superado hitos históricos de goles y victorias en su carrera profesional; su trayectoria continúa sumando registros y apariciones internacionales. (fuente: The Guardian / Reuters).</li>
+
+      </ul>
+
+
+
+      <p style="margin-top:0.8rem; color:var(--muted); font-size:0.95rem;">
+
+        Información resumida y comprobada a partir de artículos y referencias públicas; para cifras exactas de partidos/goles en una fecha determinada consulta las fuentes enlazadas abajo.
+
+      </p>
+
+    </main>
+
+
+
+    <footer>
+
+      <div>Última verificación (fuentes):</div>
+
+      <div>
+
+        <a class="source" href="https://es.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank" rel="noopener">Wikipedia (ES/EN)</a> ·
+
+        <a class="source" href="https://www.reuters.com" target="_blank" rel="noopener">Reuters</a> ·
+
+        <a class="source" href="https://www.theguardian.com" target="_blank" rel="noopener">The Guardian</a>
+
+      </div>
+
+    </footer>
+
+  </article>
+
+
+
+  <!--
+
+    Comentarios sobre las fuentes (citadas):
+
+    - Información general y tabla de clubes/debut/estadísticas: Wikipedia — Cristiano Ronaldo.  [oai_citation:0‡Wikipedia](https://en.wikipedia.org/wiki/Cristiano_Ronaldo)
+
+    - Noticias y actualizaciones sobre contrato, goles y hitos recientes: Reuters / The Guardian.  [oai_citation:1‡Reuters](https://www.reuters.com/sports/soccer/ronaldo-renews-al-nassr-contract-until-2027-2025-06-26/?utm_source=chatgpt.com)
+
+    Si quieres que incluya en la página una sección con estadísticas exactas (partidos, goles por club/temporada) las puedo añadir directamente en la misma página con tablas y referencias.
+
+  -->
+
+</body>
+
+</html>
