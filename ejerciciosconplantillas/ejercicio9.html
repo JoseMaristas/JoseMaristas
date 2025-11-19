@@ -46,23 +46,14 @@ align-items: center;
 text-align: center;
 padding: 20px;
 }
-#inicio h2 {
-font-size: 50px;
-color: white;
-text-shadow: 2px 2px 5px #000;
-}
-#inicio p {
-font-size: 20px;
-margin-top: 10px;
-color: #f1f1f1;
-}
+/* Ya NO hay nombre aquí, por tu petición */
+
 #inicio .btn {
 display: inline-block;
-margin-top: 20px;
-padding: 12px 25px;
+padding: 15px 30px;
 background: #00c4ff;
-color: #fff;
-font-size: 18px;
+color: white;
+font-size: 20px;
 border-radius: 5px;
 transition: 0.3s;
 }
@@ -79,17 +70,14 @@ gap: 40px;
 align-items: center;
 flex-wrap: wrap;
 }
-
 #sobre-mi img {
 width: 250px;
 border-radius: 10px;
 box-shadow: 0 0 10px #aaa;
 }
-
 #sobre-mi .texto {
 max-width: 600px;
 }
-
 #sobre-mi h2 { margin-bottom: 20px; }
 
 .skills span {
@@ -103,23 +91,40 @@ font-size: 14px;
 }
 
 /* -------------------------
+SECCIÓN TRAYECTORIA
+------------------------- */
+#trayectoria {
+padding: 80px 40px;
+background: #f9f9f9;
+}
+#trayectoria h2 {
+text-align: center;
+margin-bottom: 25px;
+}
+#trayectoria p {
+max-width: 800px;
+margin: auto;
+font-size: 18px;
+line-height: 1.6;
+text-align: center;
+}
+
+/* -------------------------
 SECCIÓN PORTAFOLIO
 ------------------------- */
 #portafolio {
 padding: 80px 40px;
-background: #f9f9f9;
+background: #fff;
 }
 #portafolio h2 {
 text-align: center;
 margin-bottom: 40px;
 }
-
 .proyectos {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 gap: 30px;
 }
-
 .proyecto {
 background: white;
 padding: 15px;
@@ -127,21 +132,17 @@ border-radius: 10px;
 box-shadow: 0 0 10px #ccc;
 transition: 0.3s;
 }
-
 .proyecto:hover {
 transform: translateY(-5px);
 box-shadow: 0 0 20px #bbb;
 }
-
-.proyecto h3 { margin-top: 10px; }
-.proyecto p { margin: 10px 0; }
-
 .proyecto .btn {
 display: inline-block;
 padding: 8px 15px;
 background: #111;
 color: white;
 border-radius: 5px;
+transition: 0.3s;
 }
 .proyecto .btn:hover { background: #00c4ff; }
 
@@ -209,6 +210,7 @@ RESPONSIVE
 <nav>
 <a href="#inicio">Inicio</a>
 <a href="#sobre-mi">Sobre mí</a>
+<a href="#trayectoria">Trayectoria</a>
 <a href="#portafolio">Portafolio</a>
 <a href="#contacto">Contacto</a>
 </nav>
@@ -217,8 +219,6 @@ RESPONSIVE
 <!-- --------------------- INICIO --------------------- -->
 <section id="inicio">
 <div>
-<h2>JOSE SÁNCHEZ</h2>
-<p>Futuro meor futbolista de la historia</p>
 <a href="#portafolio" class="btn">Ver Portafolio</a>
 </div>
 </section>
@@ -242,12 +242,22 @@ RESPONSIVE
 </div>
 </section>
 
+<!-- --------------------- TRAYECTORIA --------------------- -->
+<section id="trayectoria">
+<h2>Mi Trayectoria</h2>
+<p>
+Aquí puedes escribir tu experiencia, historia profesional, logros,
+estudios o evolución dentro del desarrollo web o cualquier otro campo.
+Esta sección está pensada para destacar tu recorrido y mostrar
+cómo has llegado hasta donde estás hoy.
+</p>
+</section>
+
 <!-- --------------------- PORTAFOLIO --------------------- -->
 <section id="portafolio">
 <h2>Mi Portafolio</h2>
 
 <div class="proyectos">
-
 <div class="proyecto">
 <img src="img/proyecto1.jpg" alt="Proyecto 1">
 <h3>Proyecto 1</h3>
@@ -275,7 +285,6 @@ RESPONSIVE
 <p>Proyecto centrado en experiencia de usuario.</p>
 <a class="btn" href="#">Ver más</a>
 </div>
-
 </div>
 </section>
 
@@ -295,9 +304,9 @@ RESPONSIVE
 <footer>
 <p>© 2025 Mi Portafolio. Todos los derechos reservados.</p>
 <p>
-<a href="#">Instagram</a> |
-<a href="#">LinkedIn</a> |
-<a href="#">GitHub</a>
+<a href="#" target="_blank">Instagram</a> |
+<a href="#" target="_blank">TikTok</a> |
+<a href="#" target="_blank">Twitter</a>
 </p>
 </footer>
 
